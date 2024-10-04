@@ -273,7 +273,7 @@ async def ai_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await update.message.reply_text(
-        "🧠 *Here are the options for* [𝗬𝗔𝗘 𝗠𝗜𝗞𝗢](https://telegra.ph/file/ed2d9c3693cacc9b0464e.jpg):",
+        "🧠 *Here are the options for* [𝐆𝐨𝐤𝐮</>𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭™](https://telegra.ph/file/ed2d9c3693cacc9b0464e.jpg):",
         reply_markup=reply_markup,
         parse_mode="Markdown",
     )
@@ -284,7 +284,7 @@ async def ai_command_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
     if query.data == "ai_command_handler":
         await query.answer()
         await query.message.edit_text(
-            "🧠 *Here are the options for* [𝗬𝗔𝗘 𝗠𝗜𝗞𝗢](https://telegra.ph/file/ed2d9c3693cacc9b0464e.jpg):",
+            "🧠 *Here are the options for* [𝐆𝐨𝐤𝐮</>𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭™(https://telegra.ph/file/ed2d9c3693cacc9b0464e.jpg):",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -601,7 +601,7 @@ async def stats_back(update: Update, context: ContextTypes.DEFAULT_TYPE):
         mem = psutil.virtual_memory().percent
         disk = psutil.disk_usage("/").percent
         text = f"""
-𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@𝙔𝙖𝙚𝙈𝙞𝙠𝙤_𝙍𝙤𝙭𝙗𝙤𝙩
+𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@GokuManagementBot
 ➖➖➖➖➖➖
 UPTIME ➼ {uptime}
 CPU ➼ {cpu}%
@@ -622,7 +622,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     await query.answer()
 
     if query.data == "git_source":
-        source_link = "https://github.com/Infamous-Hydra/YaeMiko"
+        source_link = "https://t.me/EditionServerSupport"
         message_text = (
             f"*Here is the link for the public source repo*:\n\n{source_link}"
         )
@@ -640,7 +640,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
 
 async def repo(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    source_link = "https://github.com/Infamous-Hydra/YaeMiko"
+    source_link = "https://t.me/EditionServerSupport"
     message_text = f"*Here is the link for the public source repo*:\n\n{source_link}"
 
     await context.bot.send_message(
@@ -669,7 +669,7 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
                 [
                     [
                         InlineKeyboardButton(
-                            text="ABOUT", callback_data="Miko_support"
+                            text="ABOUT", callback_data="EditionServerSupport"
                         ),
                         InlineKeyboardButton(text="COMMAND", callback_data="help_back"),
                     ],
